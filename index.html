@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" 
+    integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <input type="checkbox" id="bar">
+    <header class="hero" id="hero">
+      <div class="navbar">
+        <h1>Rental <span> Cars </span></h1>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#Blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <label for="bar" class="fa-solid fa-bars"></i></label>
+      </div>
+      <div class="navbar2">
+        <div>
+          <a href="#"
+            >(+91)8821474809
+            <i class="fa-sharp-duotone fa-solid fa-reply-all"></i
+          ></a>
+        </div>
+
+        <div class="icon">
+          <a href="https://mail.google.com/mail/" target="_blank"
+            ><i class="fa-duotone fa-solid fa-envelopes-bulk"> </i
+            >rental@gmail.com
+          </a>
+        </div>
+      </div>
+
+      <div class="content">
+        <div>
+          <h5 style="font-size: 45px"><span style="color: red;">Rent</span> a car</h5><br>
+          <p style="font-size: 40px"><span style="color: red;">Best</span> rented cars in your location</p>
+          <h5 style="font-size: 45px">
+            <span> Get <span style="color: red;">15% </span>off on your first </span>
+            reservation...
+          </h5><br>
+          <h4>
+            <button class="btn"><a href="#reservation"> Book now </a></button>
+          </h4>
+        </div>
+      </div>
+    </header>
+    <!-- reservation section ----------------------------------------------------------------------------->
+    <h1 style="font-size: 50px; text-align: center" id="reservation">
+      Reservation
+    </h1>
+    <div class="background">
+      <div class="reservation-form">
+        <h1>Continue Car Reservation</h1>
+        <br /><br /><br />
+        <form action="">
+          <label for="cars">Select Car type </label>
+          <input type="text" name="name" id="cars" list="vehicles" />
+          <datalist id="vehicles">
+            <option value="Jaguar"></option>
+            <option value="Ferrari"></option>
+            <option value="Audi"></option>
+            <option value="BMW"></option>
+            <option value="Rang Rover"></option>
+            <option value="Jeep"></option>
+          </datalist>
+
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
+
+          <label for="destination">Destination</label>
+          <input type="text" name="destination" id="destination" required />
+
+          <label for="departure-date">Departure-date</label>
+          <input type="date" name="departure-date" required />
+
+          <label for="return-date">Return date</label>
+          <input
+            type="date"
+            name="return-date"
+            id="return-date"
+            required
+          /><br />
+
+          <button type="submit">Book now</button>
+        </form>
+      </div>
+    </div>
+    <br><br><hr>
+
+    <!-- about section ------------------------------------------------------------->
+    <section class="about-section" id="about">
+      <div class="about-container">
+        <div class="heading1">
+          <h1>About Us</h1>
+          
+        </div>
+
+        <div class="about-content">
+          <h2>Come and see what we offer </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident
+            earum suscipit necessitatibus nihil adipisci. Enim.
+            <a href="#">read more</a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <!-- blog section --------------------------------------------------------------------->
+    <section class="blog" id="Blog">
+      <h1>Blog</h1>
+      <div class="blog-container">
+        <div class="card">
+          <img src="/audi.jpg" alt="">
+          <h1>Audi</h1>
+          <h2>$1000/day</h2>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <button>book now</button>
+        </div>
+
+        <div class="card">
+          <img src="/bmw.jpeg" alt="">
+          <h1>BMW</h1>
+          <h2>$1000/day</h2>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <button>book now</button>
+        </div>
+
+        <div class="card">
+          <img src="/farari.jpg" alt="">
+          <h1>Ferrari</h1>
+          <h2>$1000/day</h2>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <button>book now</button>
+        </div>
+
+        <div class="card">
+          <img src="/black_light.jpeg" alt="">
+          <h1>Mercedes</h1>
+          <h2>$100/day</h2>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <button>book now</button>
+        </div>
+
+        <div class="card">
+          <img src="/pexels-dk004-14885685.jpg" alt="">
+          <h1>thar</h1>
+          <h2>$100/day</h2>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <button>book now</button>
+        </div>
+
+          <div class="card">
+          <img src="/pexels-louis-gys-218031041-11921988.jpg" alt="">
+          <h1>BMW</h1>
+          <h2>$100/day</h2>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <button>book now</button>
+        </div>
+
+      
+      </section>
+
+      <!-- contact us section--------------------------------------------------------------------------------->
+
+      <section class="contact" id="Contact">
+        <!-- <h1>Contact Us</h1> -->
+        <div class="content-contact">
+          <h2>Contact us</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet similique exercitationem
+             quas commodi cumque, praesentium sapiente incidunt nostrum expedita iste! 
+             </p>
+        </div>
+        <div class="contact-container">
+          <div class="contact-info">
+            <div class="box-contact">
+              <div class="icon"> <i class="fa fa-map-marker" aria-hidden="true"></i></div>
+
+                <div class="txt">
+                  <h3>Adress</h3>
+                  <p>185, Zone-I,<br> M.P. Nagar, Bhopal, Madhya Pradesh <br> 462011</p>
+                </div>
+              
+            </div>
+
+            <div class="box-contact">
+              <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                <div class="txt">
+                  <h3>Phone</h3>
+                  <p>0755-4455-4455</p>
+                </div>
+              </div>
+
+            <div class="box-contact">
+              <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                <div class="txt">
+                  <h3>E-mail</h3>
+                  <p>Rentalcar@mail.com</p>
+                </div>
+              </div>
+          </div>
+
+          <div class="contact-form">
+            <form action="">
+              <h2>Send Message</h2>
+              <div class="input-box">
+                <input type="text" name="" required="required">
+                <span>Full name</span>
+
+                <div class="input-box">
+                <input type="text" name="" required="required">
+                <span>Email</span>
+
+                <div class="input-box">
+                <textarea name="" id="" required></textarea>
+                <span>Type your Message...</span>
+
+                <div class="input-box">
+                  <input type="submit" value="send">
+                </div>
+
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer ----------------------------------------------------------- -->
+       <footer class="footer">
+        <div class="footer2">
+          <div class="one">
+            <h1>Who we are</h1><br><br>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, <labore class="br"></labore> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+               Tempore magnam eos <br> enim officia obcaecati corporis nostrum iusto animi,<br> consectetur neque.</p>
+          </div>
+
+          <div class="two">
+            <h1>Learn About Us </h1><br><br>
+            <p id="about"><a href="">About Us </a><p>
+            <p id="contact"><a href="">Contact Us</a></p>
+            <p><a href="">Blog </a><p>
+            <p><a href="">Privacy Policy </a><p>
+            <p><a href="">Terms & Conditions </a><p>
+          </div>
+          <div class="three">
+            <h1>Recent News</h1><br><br>
+            <p>Aug 28,2023</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Quisquam pariatur autem, incidunt nesciunt explicabo </p>
+              
+            <p>Aug 28,2023</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Quisquam pariatur autem, incidunt nesciunt explicabo</p> 
+              
+            <p>Aug 28,2023</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Quisquam pariatur autem, incidunt nesciunt explicabo </p>
+              
+          </div>
+          <div class="four">
+            <h1>Stay Updated </h1><br><br>
+            <p>If you want to get information about published please input your email below. 
+              Don't worry, your email address will be protected to us.</p><br>
+              <input type="email" class="email-box" placeholder="Enter your email">
+              <label for="email" class="email-button">Submit</label>
+          </div>
+
+        </div>
+
+          <div class="copyright">
+            <p>Copyright 2024 &copy; All rights reserved | Made By Harsh Gupt<p>
+      
+          </div>
+       </footer>
+  </body>
+</html>
