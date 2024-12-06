@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/table.css">
+</head>
+<body id="dashboard">
+    <div class="header">
+        <h5>Employee</h5>
+    </div>
+    <div class="upper-btn-box">
+        <div class="left-box">
+            <button id="add-btn" onclick="return add()"><i class="fa fa-plus"></i> &nbsp; add employe</button>
+            <button style="background-color: rgb(27, 168, 168);"><i class="fa fa-eraser"></i>&nbsp; clear filtering</button>
+        </div>
+        <div class="right-box">
+            <i class="fa fa-search"></i>
+            <input type="text" id="empid" placeholder="type here">
+            <button>search</button>
+        </div>
+    </div>
+    <div class="table">
+        <table>
+            <tr>
+                <th>Car type</th>
+                <th>E-mail</th>
+                <th>Destination</th>
+                <th>Departure Date</th>
+                <th>return Date</th>
+                <th colspan="2">Action</th>
+            </tr>
+            <tr>
+                <td>hello</td>
+                <td>hello</td>
+                <td>hello</td>
+                <td>hello</td>
+                <td>hello</td>
+                <td>
+                    <button ><i class="fa fa-eye"></i></button>
+                    <button style="background-color: rgb(27, 168, 168)" ><i class="fa fa-trash"></i></button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- add function ------------>
+    <div class="add" >
+        <div class="input-box">
+            <label for="">Id</label>
+            <input type="text" id="id">
+        </div>
+        <div class="input-box">
+            <label for="">Fname</label>
+            <input type="text" id="Fname">
+        </div>
+        <div class="input-box">
+            <label for="">Lname</label>
+            <input type="text" id="Lname">
+        </div>
+        <div class="input-box">
+            <label for="">email</label>
+            <input type="text" id="email">
+        </div>
+        <div class="input-box">
+            <label for="">office code</label>
+            <input type="text" id="office-code">
+        </div>
+        <div class="input-box">
+            <label for="">job Title</label>
+            <input type="text" id="job-title">
+        </div>
+        <div class="input-box">
+            <button>Registration</button>
+            <button style="background-color: rgb(27, 168, 168)">Update</button>
+        </div>
+    </div>
+    <script src="/table.js"></script>
+</body>
+</html>

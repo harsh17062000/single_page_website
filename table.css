@@ -1,0 +1,187 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.header
+{
+    width: 100%;
+    padding: 10px 30px;
+    background-color: brown;
+}
+
+.header h5
+{
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 29px;
+    color: aliceblue;
+}
+
+.upper-btn-box
+{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    padding: 30px;
+
+}
+
+.upper-btn-box .left-box 
+{
+    width: 50%;
+    height: 100%;
+}
+
+.upper-btn-box .left-box button 
+{
+    border: none;
+    outline: none;
+    background-color: rgb(16, 73, 230);
+    padding: 10px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+    margin: 8px;
+}
+
+.upper-btn-box .right-box
+{
+    width: 50%;
+    height: 100%;
+    display: flex;
+
+}
+
+.upper-btn-box .right-box i
+{
+    font-size: 25px;
+    color: rgb(28, 169, 169);
+    padding: 10px;
+}
+
+.upper-btn-box .right-box button
+{
+    border: none;
+    outline: none;
+    background-color: brown;
+    padding: 10px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+    text-align: center;
+    margin-left: 10px;
+}
+
+
+.upper-btn-box .right-box input
+{
+    width: 80%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid rgb(16, 73, 230);
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.table
+{
+    width: 100%;
+    padding: 30px;
+
+}
+.table table{
+    width: 100%;
+    /* border: 1px solid #ccc; */
+
+}
+
+.table table tr th{
+    border-right: 1px solid #ccc;
+    padding: 30px 0 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 20px;
+    border-bottom: 1px solid #ccc;
+
+}
+
+.table table tr td{
+    border-right: 1px solid #ccc;
+    padding: 10px 0 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    text-align: center;
+
+}
+.table table tr td button 
+{
+    width: 20%;
+    border: none;
+    outline: none;
+    background-color: brown;
+    padding: 5px 0px 5px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+    margin: 0px 0px 5px 0px;
+}
+
+.add
+{
+    width: 70%;
+    height: auto;
+    background-color: rgb(229, 231, 230);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-top: 20px groove lightblue;
+    padding: 70px 200px 100px 200px;
+    display: none;
+}
+
+.add .input-box
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.add .input-box label
+{
+    font-size: 22px;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin: 15px 0px 0px 0px;
+}
+
+.add .input-box input
+{
+    width: 70%;
+    margin: 10px 0px 0px 0px;
+    border: none;
+    padding: 13px;
+    outline: none;
+    border-bottom: 3px solid blue;
+    background-color: transparent;
+    background-color: transparent;
+}
+
+.add .input-box button
+{
+    width: 45%;
+    border: none;
+    outline: none;
+    background-color: blue;
+    padding: 10px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+    text-align: center;
+    margin: 20px 10px 10px 10px;
+}

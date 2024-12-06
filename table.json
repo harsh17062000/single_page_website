@@ -1,0 +1,39 @@
+{
+    "product": [
+    {
+      "car type": "Alto",
+      "email": "harsh@gmail.com",
+      "Destination": "Indore",
+      "departure-date": "10-12-2024",
+      "Return-date": "17-12-2024"
+    },
+    {
+        "car type": "Creta",
+        "email": "abc@gmail.com",
+        "Destination": "pune",
+        "departure-date": "11-12-2024",
+        "Return-date": "16-12-2024"
+    },
+    {
+        "car type": "tata",
+        "email": "xyz@gmail.com",
+        "Destination": "lucknow",
+        "departure-date": "12-12-2024",
+        "Return-date": "18-12-2024"
+    },
+    {
+        "car type": "nano",
+        "email": "xyz@gmail.com",
+        "Destination": "lucknow",
+        "departure-date": "12-12-2024",
+        "Return-date": "18-12-2024"
+    },
+    {
+        "car type": "jagwar",
+        "email": "xyz@gmail.com",
+        "Destination": "lucknow",
+        "departure-date": "12-12-2024",
+        "Return-date": "18-12-2024"
+    }
+  ]
+}

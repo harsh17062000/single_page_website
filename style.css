@@ -232,17 +232,24 @@
   height: fit-content;
 }
 
-.blog .blog-container .card button {
+.blog .blog-container .card p 
+{
+  margin-bottom: 20px;
+} 
+
+.blog .blog-container .card button a{
   /* border: none; */
   outline: auto;
-  padding: 12px;
+  padding: 12px 90px 10px 90px;
   color: white;
   background-color: black;
   text-align: center;
   cursor: pointer;
   width: 300px;
   font-size: 20px;
-  margin: 10px;
+  font-weight: 100;
+  text-decoration: none;
+  border-color: 1px solid grey;
 }
 
 /* contact us ------------------------------------------------------------------------------- */
