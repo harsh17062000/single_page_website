@@ -131,7 +131,7 @@
     margin: 0px 0px 5px 0px;
 }
 
-.add
+.additem
 {
     width: 70%;
     height: auto;
@@ -145,14 +145,14 @@
     display: none;
 }
 
-.add .input-box
+.additem .input-box
 {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-.add .input-box label
+.additem .input-box label
 {
     font-size: 22px;
     font-weight: bold;
@@ -160,7 +160,7 @@
     margin: 15px 0px 0px 0px;
 }
 
-.add .input-box input
+.additem .input-box input
 {
     width: 70%;
     margin: 10px 0px 0px 0px;
@@ -172,7 +172,7 @@
     background-color: transparent;
 }
 
-.add .input-box button
+.additem .input-box button
 {
     width: 45%;
     border: none;

@@ -14,7 +14,7 @@
     </div>
     <div class="upper-btn-box">
         <div class="left-box">
-            <button id="add-btn" onclick="return add()"><i class="fa fa-plus"></i> &nbsp; add employe</button>
+            <button class="addbtn" onclick="return add()"><i class="fa fa-plus"></i> &nbsp; add employe</button>
             <button style="background-color: rgb(27, 168, 168);"><i class="fa fa-eraser"></i>&nbsp; clear filtering</button>
         </div>
         <div class="right-box">
@@ -25,52 +25,41 @@
     </div>
     <div class="table">
         <table>
-            <tr>
+            <thead>
                 <th>Car type</th>
                 <th>E-mail</th>
                 <th>Destination</th>
                 <th>Departure Date</th>
                 <th>return Date</th>
                 <th colspan="2">Action</th>
-            </tr>
-            <tr>
-                <td>hello</td>
-                <td>hello</td>
-                <td>hello</td>
-                <td>hello</td>
-                <td>hello</td>
-                <td>
-                    <button ><i class="fa fa-eye"></i></button>
-                    <button style="background-color: rgb(27, 168, 168)" ><i class="fa fa-trash"></i></button>
-                </td>
-            </tr>
+            </thead>
+            <tbody id="tableoutput">
+              
+        </tbody>
         </table>
     </div>
 
     <!-- add function ------------>
-    <div class="add" >
+    <div class="additem" >
+        
         <div class="input-box">
-            <label for="">Id</label>
-            <input type="text" id="id">
-        </div>
-        <div class="input-box">
-            <label for="">Fname</label>
+            <label for="">Car type</label>
             <input type="text" id="Fname">
         </div>
         <div class="input-box">
-            <label for="">Lname</label>
+            <label for="">E-mail</label>
             <input type="text" id="Lname">
         </div>
         <div class="input-box">
-            <label for="">email</label>
+            <label for="">Destination</label>
             <input type="text" id="email">
         </div>
         <div class="input-box">
-            <label for="">office code</label>
+            <label for="">Departure Date</label>
             <input type="text" id="office-code">
         </div>
         <div class="input-box">
-            <label for="">job Title</label>
+            <label for="">return Date</label>
             <input type="text" id="job-title">
         </div>
         <div class="input-box">

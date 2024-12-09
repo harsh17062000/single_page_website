@@ -1,39 +1,39 @@
 {
     "product": [
     {
-      "car type": "Alto",
+      "cartype": "Alto",
       "email": "harsh@gmail.com",
       "Destination": "Indore",
-      "departure-date": "10-12-2024",
-      "Return-date": "17-12-2024"
+      "departuredate": "10-12-2024",
+      "Returndate": "17-12-2024"
     },
     {
-        "car type": "Creta",
+        "cartype": "Creta",
         "email": "abc@gmail.com",
         "Destination": "pune",
-        "departure-date": "11-12-2024",
-        "Return-date": "16-12-2024"
+        "departuredate": "11-12-2024",
+        "Returndate": "16-12-2024"
     },
     {
-        "car type": "tata",
+        "cartype": "tata",
         "email": "xyz@gmail.com",
         "Destination": "lucknow",
-        "departure-date": "12-12-2024",
-        "Return-date": "18-12-2024"
+        "departuredate": "12-12-2024",
+        "Returndate": "18-12-2024"
     },
     {
-        "car type": "nano",
+        "cartype": "nano",
         "email": "xyz@gmail.com",
-        "Destination": "lucknow",
-        "departure-date": "12-12-2024",
-        "Return-date": "18-12-2024"
+        "Destination": "BLR",
+        "departuredate": "12-12-2024",
+        "Returndate": "18-12-2024"
     },
     {
-        "car type": "jagwar",
+        "cartype": "jagwar",
         "email": "xyz@gmail.com",
-        "Destination": "lucknow",
-        "departure-date": "12-12-2024",
-        "Return-date": "18-12-2024"
+        "Destination": "Bhopal",
+        "departuredate": "12-12-2024",
+        "Returndate": "18-12-2024"
     }
   ]
 }
