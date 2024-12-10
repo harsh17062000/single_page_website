@@ -84,7 +84,7 @@ async function saveReservationbooking() {
 
 
     try {
-        const response = await fetch('http://localhost:3000/booking', {
+        const response = await fetch('http://localhost:3000/product', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

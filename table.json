@@ -7,7 +7,72 @@
       "departuredate": "12-12-2024",
       "returndate": "undefined",
       "id": "6b1b"
+    },
+    {
+      "cartype": "hgfd",
+      "email": "hgfd",
+      "destination": "hgfd",
+      "departuredate": "hgfds",
+      "returndate": "hgfds",
+      "id": "2bdb"
+    },
+    {
+      "id": "fbbe",
+      "cartype": "Audi",
+      "email": "harsh@gmail.com",
+      "destination": "gfds",
+      "departuredate": "0323-02-01"
     }
   ],
-  "booking": []
+  "booking": [
+    {
+      "id": "4ea0",
+      "cartype": "",
+      "email": "",
+      "destination": "",
+      "departuredate": ""
+    },
+    {
+      "id": "36c1",
+      "cartype": "",
+      "email": "",
+      "destination": "",
+      "departuredate": ""
+    },
+    {
+      "id": "bb4a",
+      "cartype": "",
+      "email": "",
+      "destination": "",
+      "departuredate": ""
+    },
+    {
+      "id": "3b06",
+      "cartype": "Jaguar",
+      "email": "harsh@gmail.com",
+      "destination": "goa",
+      "departuredate": "2033-02-12"
+    },
+    {
+      "id": "65f5",
+      "cartype": "Ferrari",
+      "email": "hgfds",
+      "destination": "hgfds",
+      "departuredate": "0033-02-12"
+    },
+    {
+      "id": "ede9",
+      "cartype": "Ferrari",
+      "email": "hgfds",
+      "destination": "hgfds",
+      "departuredate": "0033-02-12"
+    },
+    {
+      "id": "5816",
+      "cartype": "Audi",
+      "email": "harsh@gmail.com",
+      "destination": "gfds",
+      "departuredate": "0323-02-01"
+    }
+  ]
 }
