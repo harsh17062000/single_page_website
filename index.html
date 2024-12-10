@@ -83,15 +83,15 @@
           </datalist>
 
           <label for="email">Email</label>
-          <input type="email" name="email" id="email" required />
+          <input type="email" name="email" id="emails" required />
 
           <label for="destination">Destination</label>
-          <input type="text" name="destination" id="destination" required />
+          <input type="text" name="destination" id="destinations" required />
 
           <label for="departure-date">Departure-date</label>
-          <input type="date" name="departure-date" required />
+          <input type="date" name="departure-date" id="departures" required />
 
-          <label for="return-date">Return date</label>
+          <label for="return-date" id="returns">Return date</label>
           <input
             type="date"
             name="return-date"
@@ -99,7 +99,7 @@
             required
           /><br />
 
-          <button type="submit">Book now</button>
+          <button  type="submit" onclick="saveReservationbooking()" href="/table.html"><a href="/table.html"> Book now</a></button>
         </form>
       </div>
     </div>
@@ -292,5 +292,7 @@
       
           </div>
        </footer>
+
+       <script src="/table.js"></script>
   </body>
 </html>

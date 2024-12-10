@@ -167,6 +167,11 @@
   border-radius: 5px;
   cursor: pointer;
 }
+
+.reservation-form button a{
+  text-decoration: none;
+  color: aliceblue;
+}
 .reservation-form button:hover {
   background-color: rgb(72, 117, 72);
 }

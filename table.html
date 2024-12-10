@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Reservations</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/table.css">
 </head>
@@ -14,59 +13,61 @@
     </div>
     <div class="upper-btn-box">
         <div class="left-box">
-            <button class="addbtn" onclick="return add()"><i class="fa fa-plus"></i> &nbsp; add Reservation</button>
-            <button style="background-color: rgb(27, 168, 168);"><i class="fa fa-eraser"></i>&nbsp; clear filtering</button>
+            <button class="addbtn" onclick="showAddForm()"><i class="fa fa-plus"></i> &nbsp; Add Reservation</button>
+            <button style="background-color: rgb(27, 168, 168);" onclick="clearSearch()"><i class="fa fa-eraser"></i>&nbsp; Clear Filtering</button>
         </div>
         <div class="right-box">
             <i class="fa fa-search"></i>
-            <input type="text" id="empid" placeholder="type here">
-            <button>search</button>
+            <input type="text" id="empid" placeholder="Search by car type or email" oninput="searchReservations()">
+            <button onclick="searchReservations()">Search</button>
         </div>
     </div>
     <div class="table">
         <table>
             <thead>
-                <th>Car type</th>
-                <th>E-mail</th>
-                <th>Destination</th>
-                <th>Departure Date</th>
-                <th>return Date</th>
-                <th colspan="2">Action</th>
+                <tr>
+                    <th>Car Type</th>
+                    <th>E-mail</th>
+                    <th>Destination</th>
+                    <th>Departure Date</th>
+                    <th>Return Date</th>
+                    <th colspan="2">Action</th>
+                </tr>
             </thead>
             <tbody id="tableoutput">
-              
-        </tbody>
+                <!-- Dynamic rows will be injected here -->
+            </tbody>
         </table>
     </div>
 
-    <!-- add function ------------>
-    <div class="additem" >
-        
+    <!-- Add/Edit Reservation Form -->
+    <div class="additem" style="display:none;">
         <div class="input-box">
-            <label for="">Car type</label>
-            <input type="text" id="Fname">
+            <label for="cartype">Car Type</label>
+            <input type="text" id="cartype">
         </div>
         <div class="input-box">
-            <label for="">E-mail</label>
-            <input type="text" id="Lname">
-        </div>
-        <div class="input-box">
-            <label for="">Destination</label>
+            <label for="email">E-mail</label>
             <input type="text" id="email">
         </div>
         <div class="input-box">
-            <label for="">Departure Date</label>
-            <input type="text" id="office-code">
+            <label for="destination">Destination</label>
+            <input type="text" id="destination">
         </div>
         <div class="input-box">
-            <label for="">return Date</label>
-            <input type="text" id="job-title">
+            <label for="departure">Departure Date</label>
+            <input type="text" id="departure">
         </div>
         <div class="input-box">
-            <button>Registration</button>
-            <button style="background-color: rgb(27, 168, 168)">Update</button>
+            <label for="return">Return Date</label>
+            <input type="text" id="return">
+        </div>
+        <div class="input-box">
+            <button onclick="saveReservation()">Save</button>
         </div>
     </div>
+
     <script src="/table.js"></script>
+    
 </body>
 </html>
