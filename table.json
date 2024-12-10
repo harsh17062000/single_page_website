@@ -1,39 +1,24 @@
 {
-    "product": [
+  "product": [
     {
-      "cartype": "Alto",
-      "email": "harsh@gmail.com",
-      "Destination": "Indore",
-      "departuredate": "10-12-2024",
-      "Returndate": "17-12-2024"
+      "cartype": "tata",
+      "email": "xyz@gmail.com",
+      "Destination": "lucknow",
+      "departuredate": "12-12-2024",
+      "Returndate": "18-12-2024",
+      "id": "6b1b"
     },
     {
-        "cartype": "Creta",
-        "email": "abc@gmail.com",
-        "Destination": "pune",
-        "departuredate": "11-12-2024",
-        "Returndate": "16-12-2024"
-    },
-    {
-        "cartype": "tata",
-        "email": "xyz@gmail.com",
-        "Destination": "lucknow",
-        "departuredate": "12-12-2024",
-        "Returndate": "18-12-2024"
-    },
-    {
-        "cartype": "nano",
-        "email": "xyz@gmail.com",
-        "Destination": "BLR",
-        "departuredate": "12-12-2024",
-        "Returndate": "18-12-2024"
-    },
-    {
-        "cartype": "jagwar",
-        "email": "xyz@gmail.com",
-        "Destination": "Bhopal",
-        "departuredate": "12-12-2024",
-        "Returndate": "18-12-2024"
+      "cartype": "nano",
+      "email": "xyz@gmail.com",
+      "Destination": "BLR",
+      "departuredate": "12-12-2024",
+      "Returndate": "18-12-2024",
+      "id": "1878"
     }
+  ],
+  "booking":[
+    
   ]
 }
+

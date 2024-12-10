@@ -9,8 +9,7 @@ let final=data.map((t)=>`
                 <td>${t.departuredate}</td>
                 <td>${t.Returndate}</td>
                 <td>
-                    <button ><i class="fa fa-eye"></i></button>
-                    <button style="background-color: rgb(27, 168, 168)" ><i class="fa fa-trash"></i></button>
+                    <button style="background-color: rgb(27, 168, 168)" onclick="del('${t.id}')"><i class="fa fa-trash"></i></button>
                 </td>
             </tr>
 
@@ -18,7 +17,7 @@ let final=data.map((t)=>`
 document.querySelector("#tableoutput").innerHTML=final;
 }
 fet()
-
+// add data form ....................................................................
 function add(){
     document.querySelector(".additem").style.display="block";
 }
@@ -30,4 +29,20 @@ document.addEventListener("click", function(event) {
         editform.style.display = "none";
     }
 });
+
+
+//delete function
+function del(id){
+    let res = window.confirm("do you really want to delete this Reservation")
+   
+    if(res)
+    {
+        
+        fetch(`http://localhost:3000/product/${id}`,{method:"DELETE"});
+    }
+    else
+    {
+        alert("invalid click")
+    }
+}
 
