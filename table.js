@@ -1,8 +1,8 @@
 let reservations = [];
 async function fet() {
     
-        const response = await fetch("http://localhost:3000/product");
-        const data = await response.json();
+        let response = await fetch("http://localhost:3000/product");
+        let data = await response.json();
         reservations = data; 
         displayReservations(data); 
     
@@ -10,7 +10,7 @@ async function fet() {
 
 
 function displayReservations(data) {
-    const tableOutput = document.querySelector("#tableoutput");
+    let tableOutput = document.querySelector("#tableoutput");
     tableOutput.innerHTML = data.map((reservation) => `
         <tr data-id="${reservation.id}">
             <td>${reservation.cartype}</td>
@@ -19,7 +19,7 @@ function displayReservations(data) {
             <td>${reservation.departuredate}</td>
             <td>${reservation.returndate}</td>
             <td>
-                <button onclick="editReservation('${reservation.id}')">Edit</button>
+                <button onclick="editReservation('${reservation.id}') style=""><i class="fa fa-edit"></i></button>
             </td>
             <td>
                 <button onclick="deleteReservation('${reservation.id}')">
@@ -32,9 +32,9 @@ function displayReservations(data) {
 
 // Search reservations......................
 function searchReservations() {
-    const searchTerm = document.querySelector("#empid").value.toLowerCase();
+    let searchTerm = document.querySelector("#empid").value.toLowerCase();
 
-    const filteredData = reservations.filter(reservation => 
+    let filteredData = reservations.filter(reservation => 
         reservation.cartype.toLowerCase().includes(searchTerm) ||
         reservation.email.toLowerCase().includes(searchTerm)
     );
@@ -59,7 +59,7 @@ function showAddForm() {
 // Edit......................
 
 function editReservation(id) {
-    const row = document.querySelector(`tr[data-id='${id}']`);
+    let row = document.querySelector(`tr[data-id='${id}']`);
     if (row) {
         document.querySelector("#cartype").value = row.cells[0].textContent;
         document.querySelector("#email").value = row.cells[1].textContent;
@@ -74,7 +74,7 @@ function editReservation(id) {
 
 // Save data reservation main page.............
 async function saveReservationbooking() {
-    const reservationDatabooking = {
+    let reservationDatabooking = {
         cartype: document.querySelector("#cars").value,
         email: document.querySelector("#emails").value,
         destination: document.querySelector("#destinations").value,
@@ -84,7 +84,7 @@ async function saveReservationbooking() {
 
 
     try {
-        const response = await fetch('http://localhost:3000/product', {
+        let response = await fetch('http://localhost:3000/product', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -104,7 +104,7 @@ async function saveReservationbooking() {
 
 // new data form..............
 async function saveReservation() {
-    const reservationData = {
+    let reservationData = {
         cartype: document.querySelector("#cartype").value,
         email: document.querySelector("#email").value,
         destination: document.querySelector("#destination").value,
@@ -117,10 +117,9 @@ async function saveReservation() {
         return;
     }
 
-    try {
         if (editingReservationId) {
         
-            const response = await fetch(`http://localhost:3000/product/${editingReservationId}`, {
+            let response = await fetch(`http://localhost:3000/product/${editingReservationId}`, {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json"
@@ -136,7 +135,7 @@ async function saveReservation() {
             }
         } else {
     
-            const response = await fetch("http://localhost:3000/product", {
+            let response = await fetch("http://localhost:3000/product", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -153,16 +152,13 @@ async function saveReservation() {
         }
 
         document.querySelector(".additem").style.display = "none"; 
-    } catch (error) {
-        console.error("Error saving reservation:", error);
-    }
 }
 
 // Delete a reservation...................................
 async function deleteReservation(id) {
     if (window.confirm("Do you really want to delete this reservation?")) {
-        try {
-            const response = await fetch(`http://localhost:3000/product/${id}`, { method: "DELETE" });
+        
+            let response = await fetch(`http://localhost:3000/product/${id}`, { method: "DELETE" });
 
             if (response.ok) {
                 alert("Reservation deleted");
@@ -170,9 +166,7 @@ async function deleteReservation(id) {
             } else {
                 alert("Failed to delete reservation");
             }
-        } catch (error) {
-            console.error("Error deleting reservation:", error);
-        }
+        
     }
 }
 

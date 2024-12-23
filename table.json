@@ -2,26 +2,11 @@
   "product": [
     {
       "cartype": "tata",
-      "email": "xyz@gmail.com",
-      "destination": "undefined",
-      "departuredate": "12-12-2024",
-      "returndate": "undefined",
-      "id": "6b1b"
-    },
-    {
-      "cartype": "hgfd",
-      "email": "hgfd",
-      "destination": "hgfd",
-      "departuredate": "hgfds",
-      "returndate": "hgfds",
+      "email": "abc@gmail.com",
+      "destination": "hgfhg",
+      "departuredate": "12/10/2024",
+      "returndate": "12/10/2025",
       "id": "2bdb"
-    },
-    {
-      "id": "fbbe",
-      "cartype": "Audi",
-      "email": "harsh@gmail.com",
-      "destination": "gfds",
-      "departuredate": "0323-02-01"
     }
   ],
   "booking": [
